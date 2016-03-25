@@ -1,0 +1,12 @@
+# Domain for LED Service daemon.
+type ledservice, domain;
+type ledservice_exec, exec_type, file_type;
+
+brillo_domain(ledservice)
+allow_crash_reporter(ledservice)
+
+allow ledservice sysfs:dir r_dir_perms;
+allow ledservice sysfs:file rw_file_perms;
+allow ledservice sysfs:lnk_file read;
+allow ledservice sysfs:lnk_file getattr;
+allow ledservice example_led_service:service_manager { add find };

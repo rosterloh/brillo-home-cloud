@@ -1,0 +1,11 @@
+# Domain for LED Flasher daemon.
+type ledflasher, domain;
+type ledflasher_exec, exec_type, file_type;
+
+brillo_domain(ledflasher)
+allow_crash_reporter(ledflasher)
+
+allow_call_weave(ledflasher)
+
+allow ledflasher example_led_service:service_manager find;
+binder_call(ledflasher, ledservice)

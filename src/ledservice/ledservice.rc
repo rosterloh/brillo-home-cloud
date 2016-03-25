@@ -1,0 +1,4 @@
+service ledservice /system/bin/ledservice
+   class late_start
+   user root
+   group system dbus

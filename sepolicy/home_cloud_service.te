@@ -1,0 +1,10 @@
+type home_cloud_service, domain;
+type home_cloud_service_exec, exec_type, file_type;
+
+brillo_domain(home_cloud_service)
+
+# Allow network access (e.g. opening sockets).
+net_domain(home_cloud_service)
+
+# Allow crash_reporter access to core dump files.
+allow_crash_reporter(home_cloud_service)

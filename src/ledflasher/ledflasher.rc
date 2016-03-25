@@ -1,0 +1,4 @@
+service ledflasher /system/bin/ledflasher
+   class late_start
+   user system
+   group system
