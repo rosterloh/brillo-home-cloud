@@ -1,3 +1,4 @@
 /system/bin/ledflasher            u:object_r:ledflasher_exec:s0
 /system/bin/ledservice            u:object_r:ledservice_exec:s0
 /system/bin/home_cloud_service    u:object_r:home_cloud_service_exec:s0
+mp3_player_service                u:object_r:mp3_player_service:s0
